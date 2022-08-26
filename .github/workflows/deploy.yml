@@ -21,7 +21,7 @@ jobs:
 
       - name: Deploy
         run:
-          uses: docker
+          using: docker
           image: "Dockerfile"
         with:
           PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
