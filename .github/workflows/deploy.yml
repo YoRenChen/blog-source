@@ -25,6 +25,7 @@ jobs:
           personal_token: ${{ secrets.HEXO_DEPLOY }}
           external_repository: YoRenChen/YoRenChen.github.io
           publish_dir: docs/.vitepress/dist
+          publish_branch: master
 
       # - name: Deploy
       #   run:
