@@ -3,7 +3,6 @@ import sidebar from "./config/sidebar";
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  base: "https://github.com/YoRenChen/YoRenChen.github.io",
   lang: "zh-CN",
   title: "Yoren",
   lastUpdated: true,
