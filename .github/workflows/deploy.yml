@@ -20,8 +20,9 @@ jobs:
         run: yarn docs:build
 
       - name: Deploy
-        uses: docker
-        image: "Dockerfile"
+        runs:
+          uses: docker
+          image: "Dockerfile"
         with:
           PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
           PUBLISH_REPOSITORY: YoRenChen/YoRenChen.github.io # 公共仓库，格式：GitHub 用户名/仓库名
