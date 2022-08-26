@@ -1,0 +1,30 @@
+{
+  "name": "yoren",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "log(1)",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "vitepress": "^1.0.0-alpha.10",
+    "vue": "^3.2.37"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoRenChen"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md}": "node ./lib/createDocsInfo.js"
+  }
+}
