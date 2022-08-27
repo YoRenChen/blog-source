@@ -10,7 +10,7 @@ export default defineConfig({
   themeConfig: {
     // logo: "/logo.jpeg",
     sidebar,
-    // nav: [{ text: "gihub", link: "https://github.com/YoRenChen" }],
+    nav: [{ text: "文章", link: "/md/index" }],
     socialLinks: [{ icon: "github", link: "https://github.com/YoRenChen" }],
     footer: {
       message: "MIT License.",
@@ -23,14 +23,4 @@ export default defineConfig({
     },
   },
   cleanUrls: "without-subfolders",
-  markdown: {
-    // anchor: {
-    //   permalink: anchor.permalink.headerLink(),
-    // },
-    // toc: { level: [1, 2] },
-    // config: (md) => {
-    //   // use more markdown-it plugins!
-    //   md.use(require("markdown-it-xxx"));
-    // },
-  },
 });

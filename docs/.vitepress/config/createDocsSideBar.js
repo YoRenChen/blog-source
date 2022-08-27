@@ -1,6 +1,7 @@
 //侧边栏
 const fs = require("fs");
 const path = require("path");
+const moment = require("moment");
 const grayMatter = require("gray-matter");
 function getChildren(lpath, rootPath, sort = true) {
   let root = [];
@@ -16,6 +17,7 @@ function getChildren(lpath, rootPath, sort = true) {
   //排序
   if (sort) {
     return [...map]
+      .filter((el) => !el[1].includes("index"))
       .sort((a, b) => b[0] - a[0])
       .map((el) => {
         let rep = el[1].split("/");
@@ -23,6 +25,7 @@ function getChildren(lpath, rootPath, sort = true) {
         return {
           text,
           link: el[1],
+          date: moment(el[0]).format("YYYY-MM-DD"),
         };
       });
   }

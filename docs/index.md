@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 起码 ~
-      link: /md/http2使用
+      link: /md/index
 
 features:
   - icon: 🌟
