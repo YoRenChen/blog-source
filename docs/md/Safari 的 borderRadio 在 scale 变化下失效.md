@@ -35,7 +35,7 @@ date: 2021-08-10
 
 得到结果：
 
-![result](/images/index.gif)
+![result](/images/safari_b.gif)
 
 **Safari 的 scale 过程中，border-radius 是失效的，直到 scale 执行完毕**
 但在 chrome 无异样

@@ -5,7 +5,7 @@ date: 2021-07-12
 
 # Sentry + Vue 搭建客户端
 
-项目使用 Vue 3.0 + vite。使用 install 插入 sentry。
+项目使用 Vue 3.0 + vite。使用 install 插入 sentrxy。
 
 ## Sentry 创建新项目
 
